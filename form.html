@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phitha Ghor</title>
     <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/5973800.png" type="image/x-icon">
     <style>
         label{
             display: block;
@@ -21,6 +23,47 @@
             width: 50%;
             height: 50%;
         }
+        table{
+            /* margin-top: auto; */
+            margin: 5%;
+            /* padding: 10px; */
+        }
+        label{
+            /* padding: 5px; */
+
+        }
+        input{
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #494747;
+            border-radius: 20px;
+        }
+        ::placeholder{
+            color: rgb(115, 118, 115);
+        }
+        
+        fieldset{
+            width: 200px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] ,input[type="reset"]  {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;        
+        }
+        input[type="reset"]:hover{
+            background-color: #3066a0;
+        }
+        input[type="submit"]:hover{
+            background-color: #3066a0;
+        }
        
     </style>
 </head>
@@ -30,7 +73,15 @@
             <ul>
                 <li><a href="bcss.html">BCS</a></li>
                 <li><a href="blog.html">Blog </a></li>
-                <li><a href="selector.html">Bank</a></li>
+                <li>
+                    <a href="selector.html">Bank</a>
+                    <ul class="dropdown">
+                        <li><a href="bcss.html">BCS</a></li>
+                         <li><a href="blog.html">Blog </a></li>
+                        <li><a href="selector.html">Bank</a></li>
+                        <li><a href="Vlog.html">Vlog</a></li>
+                    </ul>
+                </li> 
                 <li><a href="Vlog.html">Vlog</a></li>
             </ul>
         </nav>
