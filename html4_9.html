@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task 1</title>
+    <style>
+        img {
+            width: 50%;
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid blue;
+            padding: 5px 10px;
+        }
+
+        .bold {
+            /* font-style: bold; */
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Practice task 1</h2>
+    <main>
+        <section>
+            <form action="">
+                <span>Search your Image here: </span>
+
+                <input type="text" name="search" id="" placeholder="Kung Fu Panda">
+                <button type="submit">Search</button>
+
+            </form><br>
+            <img src="asset/IMG_20230714_144608_145.jpg" alt="">
+            <figcaption><a href="www.google.com">For more click here</a></figcaption>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h3>Feedback Form:
+                <form action="">
+                    <label for="name">Name: </label>
+                    <input type="text" name="" id="name">
+                    <label for="date">Date: </label>
+                    <input type="date" name="" id="date">
+                    <label for="message-input">Message:</label>
+                    <textarea name="massage-input" rows="6" cols="50" id=""></textarea>
+                    <label for="button"></label>
+                    <button type="submit" id="button">Submit</button>
+                </form>
+            </h3>
+        </section>
+    </main>
+
+    <h2>Practice task 3</h2>
+
+    <section>
+        <h1>Table Tennis Tournament </h1>
+        <table>
+            <caption>Tournament Schedule and Results</caption>
+
+            <thead>
+                <tr>
+                    <td>Round </td>
+                    <td colspan="2">Match </td>
+                    <!-- <td>Round 3</td> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bold">
+                    <td>Round 1</td>
+                    <td>player A </td>
+                    <td>Player B </td>
+                </tr>
+                <tr>
+                    <td>Match 1</td>
+                    <td>John</td>
+                    <td>Alice</td>
+                </tr>
+                <tr>
+                    <td>Match 2</td>
+                    <td>Maek</td>
+                    <td>Saear</td>
+                </tr>
+                <tr class="bold">
+                    <td>Round 2</td>
+                    <td>Player C </td>
+                    <td>Player D </td>
+                </tr>
+                <tr>
+                    <td>Match 3</td>
+                    <td>TBD</td>
+                    <td>TBD </td>
+                </tr>
+                <tr>
+                    <td>Mathc 4</td>
+                    <td>TBD </td>
+                    <td>TBD</td>
+                </tr>
+                <tr class="bold">
+                    <td>Final</td>
+                    <td>Winner of Match 3</td>
+                    <td>Winner of Match 4</td>
+                </tr>
+                <!-- <tr>
+                    <td>Champion</td>
+                    <td>TBD</td>
+                    <td>TBD</td>
+                </tr> -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Champion</td>
+                    <td>TBD </td>
+                    <td>TBD</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section>
+        <h1>Practice task 2</h1>
+        <h1>Storytelling Feedback Form</h1>
+        <form action="/submit-feedback" method="post">
+            <!-- Textarea for sharing stories -->
+            <label for="story">Share Your Story:</label><br>
+            <textarea id="story" name="story" rows="10" cols="50"
+                placeholder="Write your story here..."></textarea><br><br>
+
+            <!-- Dropdown menu for rating -->
+            <label for="rating">Rate the Story:</label><br>
+            <select id="rating" name="rating">
+                <option value="good">Good</option>
+                <option value="very_good">Very Good</option>
+                <option value="excellent">Excellent</option>
+            </select><br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+
+
+</body>
+
+</html>
